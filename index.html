@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARVEL UNIVERSE HUB - O Seu Portal Oficial de Heróis</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-marvel.png">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <div class="container">
+            <img src="images/logo-marvel.png" alt="Logo Marvel" id="logo-site" onerror="this.style.display='none'; document.getElementById('titulo-texto-alternativo').style.display='block';">
+            <h1 id="titulo-texto-alternativo" style="display:none;">MARVEL</h1>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="index.html" class="ativo">Início</a></li>
+                    <li><a href="pages/historia.html">História</a></li>
+                    <li><a href="pages/herois.html">Heróis</a></li> 
+                    <li><a href="pages/mcu.html">MCU</a></li>
+                    <li><a href="pages/quadrinhos.html">Quadrinhos</a></li>
+                    <li><a href="pages/galeria.html">Galeria</a></li>
+                    <li><a href="pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="secao-hero">
+            <div class="container">
+                <h2>O UNIVERSO TE ESPERA</h2>
+                <p>O lar oficial dos Vingadores, Guardiões da Galáxia e todos os heróis lendários. Prepare-se para a próxima saga!</p>
+                <div class="video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="images/mp4 site marvel.mp4" type="video/mp4">
+                </video>
+            </div>
+                <a href="pages/herois.html" class="botao-destaque">Descubra os Heróis</a>
+            </div>
+        </section>
+
+        <section class="secao-introducao">
+            <div class="container">
+                <h3>A Casa das Ideias</h3>
+                <p>Desde a estreia do Homem de Ferro em 2008 até as mais recentes sagas nos quadrinhos, a Marvel continua a redefinir o entretenimento.</p>
+                <p>Explore as lendas, conheça as fases do Universo Cinematográfico (MCU) e mergulhe nos eventos que moldaram o Multiverso.</p>
+            </div>
+        </section>
+        
+        <section class="secao-cartoes">
+            <div class="container">
+                <div class="cartao">
+                    <img src="images/home-mcu.png" alt="Capa de Filme Marvel" class="imagem-cartao" onerror="this.onerror=null;this.src='https://placehold.co/400x250/ED1D24/FFFFFF?text=MCU+Filmes';">
+                    <h4>Filmes e Séries do MCU</h4>
+                    <p>Cronologia completa, trailers e notícias sobre a Fase atual do Universo Cinematográfico.</p>
+                    <a href="pages/mcu.html" class="link-cartao">Explorar MCU &rarr;</a>
+                </div>
+                <div class="cartao">
+                    <img src="images/home-comics.png" alt="Capa de Quadrinho Marvel" class="imagem-cartao" onerror="this.onerror=null;this.src='https://placehold.co/400x250/000000/FFFFFF?text=Quadrinhos';">
+                    <h4>O Mundo dos Quadrinhos</h4>
+                    <p>Guias de leitura, sagas épicas e os últimos lançamentos do Universo 616.</p>
+                    <a href="pages/quadrinhos.html" class="link-cartao">Ler HQs &rarr;</a>
+                </div>
+                <div class="cartao">
+                    <img src="images/Marvel_Games_logo.png" alt="Capa de Jogo Marvel" class="imagem-cartao" onerror="this.onerror=null;this.src='https://placehold.co/400x250/ED1D24/FFFFFF?text=Games+Oficiais';">
+                    <h4>Marvel Games</h4>
+                    <p>Ação e aventura digital! Conheça os últimos lançamentos para consoles e PC.</p>
+                    <a href="#" class="link-cartao">Jogar Agora &rarr;</a> 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape-principal">
+        <div class="container">
+            <div class="info-rodape">
+                <p>&copy; <span id="ano-atual"></span> Marvel Fan Hub.</p>
+                <p>Projeto para a disciplina de Introdução à Tecnologia Web.</p>
+                <p>Aluno: Anthony Ian</p>
+            </div>
+            <div class="social-rodape">
+                <a href="https://www.facebook.com/marvel" title="Facebook"><img src="images/facebook.png" alt="Facebook" onerror="this.style.display='none'"></a>
+                <a href="https://www.instagram.com/marvel" title="Instagram"><img src="images/instagram.png" alt="Instagram" onerror="this.style.display='none'"></a>
+                <a href="https://twitter.com/marvel" title="Twitter"><img src="images/X.png" alt="Twitter" onerror="this.style.display='none'"></a>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,372 @@
+/* css/style.css - Versão MARVEL UNIVERSE HUB FINAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Oswald', 'Roboto Condensed', sans-serif; 
+    background-color: #151515; 
+    color: #FFFFFF; 
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+video{
+    max-width: 100%;
+    border-radius: 10px;
+    border: solid 3px #ED1D24; 
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.cabecalho-principal {
+    background-color: #000000; 
+    padding: 15px 0;
+    border-bottom: 4px solid #ED1D24; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.cabecalho-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-site {
+    height: 50px; 
+    width: auto;
+}
+
+.menu-principal ul {
+    list-style-type: none;
+}
+
+.menu-principal ul li {
+    display: inline-block; 
+    margin-left: 25px;
+}
+
+.menu-principal ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-principal ul li a:hover,
+.menu-principal ul li a.ativo { 
+    background-color: #ED1D24; 
+    color: #FFFFFF; 
+}
+
+.secao-hero {
+    background-color: #1a1a1a; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+.secao-hero h2 {
+    font-size: 42px;
+    color: #FFD700; 
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    min-height: 42px; 
+}
+
+.secao-hero p {
+    font-size: 20px;
+    color: #cccccc;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.botao-destaque {
+    display: inline-block;
+    background-color: #ED1D24; 
+    color: #FFFFFF;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-destaque:hover {
+    background-color: #FFD700; 
+    color: #000000;
+    transform: translateY(-2px); 
+}
+
+
+.secao-introducao {
+    padding: 50px 0;
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.secao-introducao h3 {
+    font-size: 32px;
+    color: #FFD700; 
+    margin-bottom: 20px;
+}
+
+.secao-cartoes {
+    padding: 50px 0;
+    background-color: #151515; 
+}
+
+.secao-cartoes .container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+.cartao {
+    background-color: #1e1e1e;
+    border: 1px solid #2c2c2c;
+    border-radius: 8px;
+    padding: 25px;
+    width: calc(33.333% - 20px); 
+    min-width: 280px; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(237, 29, 36, 0.4); 
+    border-color: #ED1D24; 
+}
+
+.imagem-cartao {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #111; 
+}
+
+.cartao h4 {
+    font-size: 22px;
+    color: #ED1D24; 
+    margin-bottom: 10px;
+}
+
+.cartao p {
+    font-size: 15px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    min-height: 60px; 
+}
+
+.link-cartao {
+    color: #FFD700; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.link-cartao:hover {
+    color: #ED1D24; 
+    text-decoration: underline;
+}
+
+.rodape-principal {
+    background-color: #000000;
+    color: #888888;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 4px solid #ED1D24;
+    margin-top: 30px; 
+}
+
+.rodape-principal .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.info-rodape {
+    text-align: left;
+    flex-basis: 70%; 
+}
+
+.social-rodape {
+    text-align: right;
+    flex-basis: 25%; 
+}
+
+.social-rodape img {
+    width: 24px; 
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-rodape img:hover {
+    opacity: 1;
+}
+
+/* ESTILOS ESPECÍFICOS POR PÁGINA (TEMA) */
+
+.secao-historia {
+    background-color: #2b2b2b; 
+}
+.secao-historia h2 {
+    color: #DAA520; 
+    font-size: 38px;
+    border-bottom: 2px solid #DAA520;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.secao-herois {
+    background-color: #0d0d0d; 
+}
+.secao-herois h2 {
+    color: #ED1D24; 
+    font-size: 44px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(237, 29, 36, 0.5);
+}
+
+.secao-mcu {
+    background-color: #101925; 
+}
+.secao-mcu h2 {
+    color: #1E90FF; 
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(30, 144, 255, 0.4);
+}
+
+.secao-quadrinhos {
+    background-color: #242424; 
+}
+.secao-quadrinhos h2 {
+    color: #00FFFF; 
+    font-size: 36px;
+    border-left: 5px solid #00FFFF;
+    padding-left: 15px;
+    text-align: left; 
+    max-width: 700px;
+    margin: 0 auto 20px 0;
+}
+.secao-quadrinhos .container,
+.secao-quadrinhos .secao-introducao .container {
+    text-align: left; 
+}
+.secao-quadrinhos .secao-introducao p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.secao-galeria {
+    background-color: #1c1c1c; 
+}
+.secao-galeria h2 {
+    color: #CCCCCC; 
+    font-style: italic;
+    font-weight: 300;
+}
+
+.secao-contato {
+    background-color: #171717; 
+}
+.secao-contato h2 {
+    color: #FFA500; 
+    letter-spacing: 1px;
+}
+.secao-formulario {
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background-color: #171717; 
+}
+.form-contato {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #222222;
+    border-radius: 8px;
+    border: 1px solid #333;
+    text-align: left;
+}
+.form-contato label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    color: #FFD700; 
+    font-weight: bold;
+}
+.form-contato input[type="text"],
+.form-contato input[type="email"],
+.form-contato select,
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #111;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.form-contato textarea {
+    resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .cabecalho-principal .container {
+        flex-direction: column;
+    }
+    .menu-principal ul li {
+        margin: 0 10px;
+    }
+    .secao-hero h2 {
+        font-size: 32px;
+    }
+    .secao-cartoes .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartao {
+        width: 95%;
+        min-width: unset;
+    }
+    .rodape-principal .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-rodape, .social-rodape {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
